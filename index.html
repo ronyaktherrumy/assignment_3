@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "banner-bg": "url('./im')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class=" ">
+      <!-- nav  -->
+      <div
+        class="max-w-screen-xl navbar bg-red-400 rounded-full my-12 mx-auto px-8 md:px-12 lg:px-16"
+      >
+        <div class="flex-1">
+          <ul class="flex gap-4 text-white">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Shop</li>
+            <li>All fruits</li>
+          </ul>
+          <img class="ml-4 lg:ml-28" src="./images/logo.png" alt="" />
+          <h2 class="font-bold text-3xl text-white ml-2 lg:ml-4">
+            Fruit Burst
+          </h2>
+        </div>
+        <div class="flex-none gap-2">
+          <div class="flex">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="input input-bordered w-24 md:w-auto rounded-full text-white"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- nav end  -->
+
+      <!-- banner with carosel -->
+
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/banner2.png" class="w-full" />
+
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <div class="text-center text-white space-y-4">
+              <h1 class="text-center font-black text-4xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p>We supply highly quality organic products</p>
+              <button
+                class="btn border-amber-50 bg-red-400 text-white text-sm rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/banner4.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <div class="text-center text-white space-y-4">
+              <h1 class="text-center font-black text-4xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p>We supply highly quality organic products</p>
+              <button
+                class="btn border-amber-50 bg-red-400 text-white text-sm rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="./images/banner3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <div class="text-center text-white space-y-4">
+              <h1 class="text-center font-black text-4xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p>We supply highly quality organic products</p>
+              <button
+                class="btn border-amber-50 bg-red-400 text-white text-sm rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <div class="text-center text-white space-y-4">
+              <h1 class="text-center font-black text-4xl">
+                Exotic tastes at your <br />
+                doorstep
+              </h1>
+              <p>We supply highly quality organic products</p>
+              <button
+                class="btn border-amber-50 bg-red-400 text-white text-sm rounded-lg"
+              >
+                Shop now
+              </button>
+            </div>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:block">
+        <section
+          class="flex items-center justify-center gap-12 w-9/12 h-40 p-8 -mt-20 bg-white sticky mx-auto"
+        >
+          <div>
+            <img class="w-28" src="./images/fruit1.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img class="w-28" src="./images/fruit2.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img class="w-28" src="./images/fruit3.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img class="w-28" src="./images/fruit4.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+          <div>
+            <img class="w-28" src="./images/fruit5.png" alt="" />
+            <p>Strawberry</p>
+          </div>
+        </section>
+      </div>
+      <!-- end  -->
+    </header>
+    <!-- end header  -->
+
+    <!-- main  -->
+    <main>
+      <!-- deal of the day  -->
+      <section
+        class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-around md:gap-9 lg:gap-32 mt-14 lg:mt-20 text-white px-8 lg:px-96"
+      >
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold">Deal of the day</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
+            Latin literature from 45 BC, making it over 2000 years old.
+          </p>
+        </div>
+        <div class="flex">
+          <h1 class="text-4xl">29</h1>
+          <h5>day</h5>
+          <br />
+          <h1 class="text-4xl">15</h1>
+          <h5>Hours</h5>
+          <br />
+
+          <h1 class="text-4xl">25</h1>
+          <h5>Minutes</h5>
+          <h1 class="text-4xl">8</h1>
+          <h5>Seconds</h5>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
